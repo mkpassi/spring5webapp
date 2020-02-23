@@ -38,14 +38,6 @@ public class Book {
         this.id = id;
     }
 
-    public Publisher getPublisher() {
-        return publisher;
-    }
-
-    public void setPublisher(Publisher publisher) {
-        this.publisher = publisher;
-    }
-
     public String getTitle() {
         return title;
     }
@@ -93,5 +85,13 @@ public class Book {
         sb.append(", isbn='").append(isbn).append('\'');
         sb.append('}');
         return sb.toString();
+    }
+
+    public Publisher getPublisher() {
+        return publisher;
+    }
+
+    public void setPublisher(Publisher publisher) {
+        this.publisher = publisher;
     }
 }
